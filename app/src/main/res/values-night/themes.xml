@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Ejercicio_Individual_61" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+    <style name="temapropio" parent="Theme.Material3.DayNight.NoActionBar"/>
+    <item name="android:textSize">20sp</item>
+    <item name="android:textColor">#7700FF</item>
+    <item name="android:background">#FF20E10D</item>
+</style>
+
+</resources>

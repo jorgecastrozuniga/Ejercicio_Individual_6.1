@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="205dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="30dp"
+        android:text="Ficha Personal"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fotocarnet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fotocarnet"
+        android:layout_width="105dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/nombres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:src="@drawable/sofia" />
+
+    <TextView
+        android:id="@+id/nombres"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="23dp"
+        android:text="nombres"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/apellidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fotocarnet" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="42dp"
+        android:text="email"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apellidos" />
+
+    <TextView
+        android:id="@+id/apellidos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="20dp"
+        android:text="apellidos"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombres" />
+
+    <Button
+        android:id="@+id/Enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="226dp"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
